@@ -1,3 +1,5 @@
+//Removes information in Parentheses, IE "THIS (Sample)" becomes "THIS"
+
 using System.Text.RegularExpressions;
 private void xrLabel6_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
       XRLabel label = (XRLabel)sender;
