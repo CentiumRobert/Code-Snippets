@@ -1,0 +1,8 @@
+using System.Text.RegularExpressions;
+private void xrLabel6_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+      XRLabel label = (XRLabel)sender;
+                string pattern = @"\([\s\S]*?\)";
+                Regex rgx = new Regex(pattern);
+                
+                label.Text = rgx.Replace(label.Text, "");
+}
